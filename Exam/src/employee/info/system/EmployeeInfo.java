@@ -56,7 +56,6 @@ public class EmployeeInfo extends EmployeeData{
 			//Average Performance
 			total += (int) (salary * 0.08);
 		}
-		System.out.println(total);
 		return total;
 	}
 	
@@ -70,7 +69,6 @@ public class EmployeeInfo extends EmployeeData{
 	public static int calculateEmployePension(int salary, int years){
 		int total=0;
 		total += (int) (salary * (years*0.05));
-		System.out.println(total);
 		return total;
 	}
 	
