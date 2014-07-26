@@ -1,0 +1,110 @@
+Answer these below Questions:
+
+
+
+
+What jdk contains or composed of and define each components?
+	Answer:	The JDK contains:
+		Java Compiler (javac) - The compiler converts source code into bytecode
+		Java Virtual Machine (JVM)- The virtual machine runs the bytecode in the Operating System.
+
+What is IDE?
+	Answer:	Integrated Development Environment
+
+What are the IDEs available in the market to support java?
+	Answer:	Eclipse, Intellij
+
+Explain the entire java life cycle.
+	Answer:	Editor to Source Code to Compiler to byte Code to Virtual Machine to OS
+
+what is class?
+	Answer:	Class is a blueprint of an Object.
+
+What is object?
+	Answer:	An object is an instance of the class.
+
+What is the entry point of an application?
+	Answer:	main(String[] args)
+
+Why main is static?
+	Answer:	This way main can be called without creating an instance of Main
+
+What is the difference between an Interface and Abstract class?
+	Answer:	Interface only holds methods without definition.
+	Answer:	Abstract Class holds methods with definition which can be changed.
+
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+	Answer:	No, you'll have to implement the interface to another class.
+	Answer:	No, you'll have to extend the abstract class to another class.
+
+what is Access Specifier?
+	Answer:	Public, Private, Protected, and Package
+
+What is OOP ? Define each feature of java OOP.
+	Answer:	Object Oriented Programming.
+		Abstraction - Create Abstract classes and methods
+		Inheritance - Create classes with pre-existing codes
+		Encapsolation - Data hiding within the class
+		Polymorphism - Create multiple methods with the same name, but with different arguments and different functions
+		
+What is API? Name list of API that you have used so far.
+	Answer:	Application programming interface
+		java.util.
+			String
+			LinkedList
+			Math
+		
+Does java support multiple inheritance?
+	Answer:	No
+		
+What is method overloading and when it happens?
+	Answer:	When you have a method with the same name, but want to create one that takes more or less arguments from the original.
+	Use this when you want to create a method that accepts different arguments.
+
+What is method overriding and when it happens?
+	Answer:	When you have a methods with the same name and arguments, but would like to create a new one to be called instead.  
+	Use this when the method is defined in an inherited class, but don't want to change that class.
+
+Explain exceptions in java and how to handle it.
+	Answer: An exception is an event that occurs during the normal process of the program.
+	Using try catch method.
+
+What is static keyword in java? How it has been used in variables and methods ?
+	Answer:	Static means the variable or class can be called without the creation of an instance of the class.
+	Static variables are variables, you like to be same for all instances of that object.
+	Static methods are methods, you can call without creating an instance of the object. 
+	
+What is final and how it has been used variables and methods?
+	Answer:	Using final makes things final.  You cannot change once it is declared.
+
+What is final, finally and finalize?
+	Answer:	
+		final is making sure you can't change it.
+		finally is used after a try catch statement.
+		finalize is for garbage collection.
+		
+What is a constructor ?
+	Answer: A constructor is similar to a method, but it has the same name as the Class.  This is what is used to create an object.
+	
+What is "this" keyword in java ?
+	Answer:	Within the class, this refers to the current object.
+	
+What is JVM stand for ?
+	Answer: Java Virtual Machine
+		
+What version of java are you using?
+	Answer:	1.8
+	
+What is JAR stand for ?
+	Answer:	Java Archive
+	
+What is compile time and run time?
+	Answer:
+		Compile time is the time when the application is created.
+		Run time is the time when the applicaiton is running.
+		
+What is heap?
+	Answer:	Heap is a location of memory
+	
+How java manage it's memory?
+	Answer:	Java has it's own memory manager.

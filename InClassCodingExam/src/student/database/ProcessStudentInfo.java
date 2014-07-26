@@ -1,0 +1,50 @@
+package student.database;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
+import xml.reader.Student;
+import xml.reader.XmlReader;
+
+public class ProcessStudentInfo {
+
+		/*
+		 * Under XmlReader class, the parseData() will return list of Student Info which will contain Student first name, last name and score.
+		 * You need to write a method which will convert score into Grade in letter('A'for90 to 100,'B'for 80 to 89 and 
+		 * 'C' for 70 to 79.Then print this to the console.
+		 * Do any necessary steps that require for below successful output.
+		 * .................................................
+		 * Student (id= 1) "Marc" "Carp"   Grade= B
+		 * Student (id= 2) "Israt" "Khan"   Grade= A
+		 * Student (id= 3) "Mohi" "Uddin"   Grade= A
+		 * Student (id= 4) "Abrar" "Hossain"   Grade= B
+		 * Student (id= 5) "Abida" "Sultana"   Grade= B
+		 * .................................................
+		 * 
+		 * 
+		 */
+			public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+				XmlReader reader = new XmlReader();
+				List<Student> student = reader.parseData("id");
+				for(Student s: student){
+					//System.out.println(s.firstName);
+					int score = Integer.parseInt(s.score);
+					if(score >= 90 && score <= 100){
+						s.score = "A";
+					} else if (score >= 80 && score <= 89){
+						s.score = "B";
+					} else if (score >= 70 && score <= 79){
+						s.score = "C";
+					}
+					
+					System.out.println("Student (id= " + s.id + ") " + s.firstName + " " + s.lastName + " Grade= " + s.score);
+				}
+				
+				
+			}
+
+}
