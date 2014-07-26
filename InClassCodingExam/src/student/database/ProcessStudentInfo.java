@@ -31,16 +31,6 @@ public class ProcessStudentInfo {
 				XmlReader reader = new XmlReader();
 				List<Student> student = reader.parseData("id");
 				for(Student s: student){
-					//System.out.println(s.firstName);
-					int score = Integer.parseInt(s.score);
-					if(score >= 90 && score <= 100){
-						s.score = "A";
-					} else if (score >= 80 && score <= 89){
-						s.score = "B";
-					} else if (score >= 70 && score <= 79){
-						s.score = "C";
-					}
-					
 					System.out.println("Student (id= " + s.id + ") " + s.firstName + " " + s.lastName + " Grade= " + s.score);
 				}
 				

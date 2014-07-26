@@ -49,7 +49,15 @@ public class XmlReader {
 						student.lastName = content;
 						break;
 					case "score":
-						student.score = content;  
+						student.score = content;
+						int score = Integer.parseInt(student.score);
+						if(score >= 90 && score <= 100){
+							student.score = "A";
+						} else if (score >= 80 && score <= 89){
+							student.score = "B";
+						} else if (score >= 70 && score <= 79){
+							student.score = "C";
+						}
 						break;	
 					}
 				}
